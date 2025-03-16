@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">DAK<span>SH.</span></a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">education</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+            <h1> Daksh Charyani</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:3;" data-text="Video Creator">MS Word User</span>
+                <span style="--i:2;" data-text="Thumbnail Maker">Excel User</span>
+                <span style="--i:1;" data-text="Github User">Github User</span>
+            </h2>
+            <p>"I am a skilled frontend web developer with a strong command of HTML and CSS, along with a working knowledge of JavaScript. I specialize in crafting responsive and visually appealing websites, ensuring seamless user experiences. With experience in GitHub for version control and a basic understanding of Git Bash, I am committed to continuously enhancing my skills and staying updated with the latest web development trends."</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="image/Adobe Express - file (1).png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navMenu = document.querySelector(".navbar ul");
+    
+            menuToggle.addEventListener("click", function () {
+                navMenu.classList.toggle("show"); // Show/Hide menu on click
+            });
+        });
+    </script>
+    
+   
+    
+    
+
+</body>
+</html>
