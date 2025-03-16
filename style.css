@@ -86,7 +86,6 @@ color: #ffffff;
     font-family: 'Raleway', sans-serif;
     
 }
-
 .home-info h2 span {
     display: inline-block;
     color: transparent;
@@ -99,7 +98,11 @@ color: #ffffff;
     25%,100% {
         display: none;
     }
+
 }
+
+
+
 .home-info h2 span::before {
     content: attr(data-text);
     position: absolute;
@@ -214,45 +217,6 @@ color: #ffffff;
     object-fit: cover;
     mix-blend-mode: lighten;
 }
-.bars-animation {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    z-index: -1;
-}
-.bars-animation .bar {
-    width: 100%;
-    height: 100%;
-    background: #1f242d;
-    transform: translateY(-100%);
-    animation: show-bars .5s ease-in-out forwards;
-    animation-delay: calc(.1s * var(--i));
-}
-@keyframes show-bars {
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -319,9 +283,7 @@ color: #ffffff;
     .home-info h1 {
         font-size: 35px;
     }
-    .home-info h2 {
-        font-size: 20px;
-    }
+    
     .btn {
         padding: 8px 20px;
         font-size: 14px;
@@ -338,6 +300,8 @@ color: #ffffff;
     }
     .home-info h2 {
         font-size: 18px;
+        display: block;
+        overflow: hidden;
     }
     .home-info p {
         font-size: 12px;
@@ -383,58 +347,16 @@ color: #ffffff;
         
     }
 
-    
-
     .navbar ul.show {
         display: flex;
         width: 100%;
-        background-color: #1f242d;
-        
-        
-        
+        background-color: #1f242d;    
     }
     
+}
 
-    .home-info h2{
-        font-size: 27px;
-        margin-top: -10px;
-        font-family: 'Raleway', sans-serif;
-        
+@keyframes display-text {
+    25%,100% {
+        display: none;
     }
-    
-    .home-info h2 span {
-        display: inline-block;
-        color: transparent;
-        -webkit-text-stroke: .7px #1f242d;
-        animation: display-text 16s linear infinite;
-        animation-delay: calc(-4s * var(--i));
-        position: relative;
-    }
-    @keyframes display-text {
-        25%,100% {
-            display: none;
-        }
-    }
-    .home-info h2 span::before {
-        content: attr(data-text);
-        position: absolute;
-        width: 0;
-        border-right: 2px solid #ff9800;
-        color: #ff9800;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: fill-text 4s linear infinite;
-    }
-    @keyframes fill-text {
-        10%,100% {
-            width: 0;
-        }
-        70%,
-        90% {
-            width: 100%;
-        }
-    }
-
-
-
 }
