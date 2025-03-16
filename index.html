@@ -57,14 +57,33 @@
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navMenu = document.querySelector(".navbar ul");
+        //document.addEventListener("DOMContentLoaded", function () {
+            //const menuToggle = document.querySelector(".menu-toggle");
+            //const navMenu = document.querySelector(".navbar ul");
     
-            menuToggle.addEventListener("click", function () {
-                navMenu.classList.toggle("show"); // Show/Hide menu on click
-            });
-        });
+            //menuToggle.addEventListener("click", function () {
+              //  navMenu.classList.toggle("show"); // Show/Hide menu on click
+            //});
+        //});
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".navbar ul");
+
+    // Toggle menu on button click
+    menuToggle.addEventListener("click", function (event) {
+        navMenu.classList.toggle("show");
+        event.stopPropagation(); // Prevent click event from reaching document
+    });
+
+    // Close menu smoothly when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+            navMenu.classList.remove("show");
+        }
+    });
+});
+
     </script>
     
    
