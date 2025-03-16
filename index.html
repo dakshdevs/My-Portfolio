@@ -28,12 +28,9 @@
     <section class="home">
         <div class="home-info">
             <h1> Daksh Charyani</h1>
-            <h2>I'm a
-                <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
-                <span style="--i:3;" data-text="MS Word User">MS Word User</span>
-                <span style="--i:2;" data-text="Excel User">Excel User</span>
-                <span style="--i:1;" data-text="Github User">Github User</span>
-            </h2>
+                <div class="typing-container">
+                    <h2 class="typing-heading">I'm a&nbsp;&nbsp;<span class="typing-text-container"><span class="typing-text"></span><span class="typing-cursor">|</span></span></h2>
+                </div>
             <p>"I am a skilled frontend web developer with a strong command of HTML and CSS, along with a working knowledge of JavaScript. I specialize in crafting responsive and visually appealing websites, ensuring seamless user experiences. With experience in GitHub for version control and a basic understanding of Git Bash, I am committed to continuously enhancing my skills and staying updated with the latest web development trends."</p>
             <div class="btn-sci">
                 <a href="#" class="btn">Download CV</a>
@@ -83,6 +80,51 @@
         }
     });
 });
+
+
+
+
+
+
+
+
+
+const typingOptions = ["Frontend Developer", "MS Word User", "Excel User", "GitHub User"];
+        let textIndex = 0;
+        let charIndex = 0;
+        const typingSpeed = 100;
+        const erasingSpeed = 50;
+        const delayBetweenTexts = 1200;
+        const textElement = document.querySelector(".typing-text");
+        const cursorElement = document.querySelector(".typing-cursor");
+
+        function typeEffect() {
+            if (charIndex < typingOptions[textIndex].length) {
+                textElement.innerHTML = typingOptions[textIndex].substring(0, charIndex + 1);
+                charIndex++;
+                setTimeout(typeEffect, typingSpeed);
+            } else {
+                setTimeout(eraseEffect, delayBetweenTexts);
+            }
+        }
+
+        function eraseEffect() {
+            if (charIndex > 0) {
+                textElement.innerHTML = typingOptions[textIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseEffect, erasingSpeed);
+            } else {
+                textIndex = (textIndex + 1) % typingOptions.length;
+                setTimeout(typeEffect, typingSpeed);
+            }
+        }
+
+        typeEffect();
+
+
+
+
+
 
     </script>
     

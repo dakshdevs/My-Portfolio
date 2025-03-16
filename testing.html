@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .home-info h2 {
+            font-size: 27px;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .home-info h2 span {
+            position: absolute;
+            left: 110px;
+            display: inline-block;
+            color: transparent;
+            -webkit-text-stroke: 0.7px #1f242d;
+            animation: display-text 16s linear infinite;
+            animation-delay: calc(4s * var(--i));
+            white-space: nowrap;
+        }
+
+        @keyframes display-text {
+            0%, 25% {
+                opacity: 1;
+                visibility: visible;
+            }
+            26%, 100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .home-info h2 span::before {
+            content: attr(data-text);
+            position: absolute;
+            width: 0;
+            border-right: 2px solid #ff9800;
+            color: #ff9800;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: fill-text 4s linear infinite;
+            animation-delay: calc(4s * var(--i));
+        }
+
+        @keyframes fill-text {
+            0%, 10% {
+                width: 0;
+            }
+            70%, 90% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="home-info">
+        <h2>I'm a 
+            <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
+            <span style="--i:3;" data-text="MS Word User">MS Word User</span>
+            <span style="--i:2;" data-text="Excel User">Excel User</span>
+            <span style="--i:1;" data-text="Github User">Github User</span>
+        </h2>
+    </div>
+
+</body>
+</html>
