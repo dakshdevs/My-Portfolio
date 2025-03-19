@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1f242d;
+            
+        }
+        .projects-section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .projects-section h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .projects-section h1 span {
+            color: #ff9800;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .project-card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card p {
+            font-family: 'Raleway', sans-serif;
+        }
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .project-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: 'Raleway', sans-serif; 
+            color: #ff9800;
+        }
+        .project-description {
+            font-size: 1em;
+            color: #d3d3d3;
+        }
+        @media (max-width: 768px) {
+            .projects-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="projects-section">
+        <h1><span>MY</span> PROJECTS</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="image/Adobe Express - file (1).png" alt="Project 1" class="project-img">
+                <div class="project-title">Project 1</div>
+                <p class="project-description">A responsive e-commerce website using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2" class="project-img">
+                <div class="project-title">Project 2</div>
+                <p class="project-description">A portfolio website to showcase my work and skills.</p>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3" class="project-img">
+                <div class="project-title">Project 3</div>
+                <p class="project-description">A landing page designed with Bootstrap for a modern look.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

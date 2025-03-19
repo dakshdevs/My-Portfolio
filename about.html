@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+
+            
+            background-color: #1f242d;
+        }
+        .about {
+            max-width: 1100px;
+            height: 100vh;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: left;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .about h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            padding-left: 15px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            position: relative;
+            top: -15px;
+            transition: color 0.3s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .about h2 span {
+            color:  #ff9800;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+        .image-container {
+            position: relative;
+            width: 420px;
+            height: 490px;
+            
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            position: relative;
+            z-index: 8;
+        }
+        .image-container::before,
+        .image-container::after,
+        .image-container .extra-frame::before,
+        .image-container .extra-frame::after {
+            content: "";
+            position: absolute;
+            background:  #ff9800;
+        }
+        .image-container::before {
+            top: -10px;
+            left: -7px;
+            width: 80px;
+            height: 4px;
+        }
+        .image-container::after {
+            top: -10px;
+            left: -10px;
+            width: 4px;
+            height: 80px;
+        }
+        .info {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+        .extra-frame::before {
+            bottom: -10px;
+            right: -10px;
+            width: 80px;
+            height: 4px;
+        }
+        .extra-frame::after {
+            bottom: -10px;
+            right: -10px;
+            width: 4px;
+            height: 80px;
+        }
+        .text {
+            max-width: 600px;
+        }
+        .text p {
+            margin-bottom: 20px;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            font-size: 20px;
+            gap: 10px;
+        }
+        
+        .icons {
+            margin: 25px 0;
+        }
+        .icons a {
+            color: #ff9800;
+            font-size: 1.7rem;
+            margin-right: 18px;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+        .icons a:hover {
+            color: #fff;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 12px 24px;
+            border: none;
+            font-size: 1.1rem;
+            margin-right: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-primary {
+            background-color: #ff9800;
+            color: #121212;
+            border-radius: 5px;
+        }
+        .btn-primary:hover {
+            background-color: #e68900;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #000000;
+            background-color: #ff9800;
+            border: 2px solid #ff9800;
+            border-radius: 5px;
+        }
+        .btn-secondary:hover {
+            background-color: #d18109;
+            color: #121212;
+        }
+
+        
+        @media (max-width: 1024px) {
+            .about {
+                padding: 40px 20px;
+            }
+            .about h2 {
+                font-size: 4.5rem;
+                text-align: center;
+                margin-left: 0;
+                margin-bottom: 10px;
+                padding-left: 0;
+            }
+            .about-content {
+                flex-direction: column;
+                gap: 50px;
+            }
+            .image-container {
+                width: 90%;
+                height: auto;
+            }
+            .text p {
+                font-size: 18px;
+                margin-left: 20px;
+            }
+            .icons {
+                margin-left: 20px;
+            }
+            .icons a {
+                font-size: 1.5rem;
+            }
+            .buttons {
+                margin-left: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .about h2 {
+                font-size: 2rem;
+            }
+            .text p {
+                font-size: 16px;
+            }
+            .buttons button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about h2 {
+                font-size: 1.8rem;
+            }
+            .text p {
+                font-size: 14px;
+            }
+            .icons a {
+                font-size: 1.3rem;
+                margin-right: 12px;
+            }
+            .buttons button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="about">
+        <h2>About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="image-container">
+                <div class="extra-frame"></div>
+                <img src="image/IMG_3607.jpeg" alt="Your Photo">
+            </div>
+            <div class="text">
+                <p>I'm Daksh Charyani, <br> a passionate frontend web developer who loves turning creative ideas into clean, responsive designs. Initially, I had no particular interest in web development, but as I explored it, I discovered a genuine passion for coding. Now, I'm fully committed to honing my skills, especially in JavaScript, while also aiming to learn backend development. I approach every task with determination, ensuring it's completed no matter what. With a problem-solving mindset and a drive for continuous growth, I'm excited to build innovative web experiences and expand my expertise.</p>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="info">
+                    <p><strong>Age:</strong> 17</p>
+                    <p><strong>Birth date:</strong> 6 Feb 2008</p>
+                    <p><strong>City:</strong> Karachi</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn-primary">Hire Me</button>
+                    <button class="btn-secondary">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
