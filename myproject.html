@@ -101,6 +101,150 @@
             font-weight: bold;
   
         }
+
+
+        @media screen and (max-width: 1024px) {
+    .projects-section {
+        padding: 40px 15px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .projects-grid {
+        gap: 20px;
+    }
+    .project-card {
+        width: 90%;
+        height: 220px;
+        margin: auto;
+    }
+    .project-info p {
+        font-size: 20px;
+    }
+    .project-card:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-section {
+        padding: 30px 10px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 15px;
+    }
+    .project-card {
+        width: 85%;
+        height: 200px;
+    }
+    .project-info p {
+        font-size: 18px;
+    }
+    .project-card:hover {
+        transform: scale(1.04) translateY(-4px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-section {
+        padding: 20px 5px;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .project-card {
+        width: 90%;
+        height: 180px;
+    }
+    .project-info p {
+        font-size: 16px;
+    }
+    .project-info a {
+        font-size: 12px;
+    }
+    .project-card:hover {
+        transform: scale(1.02) translateY(-3px);
+    }
+}
+
+
+/*@media screen and (max-width: 1024px) {
+    .projects-section {
+        padding: 40px 15px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .projects-grid {
+        gap: 20px;
+    }
+    .project-card {
+        height: 220px;
+    }
+    .project-info p {
+        font-size: 20px;
+    }
+    .project-card:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-section {
+        padding: 30px 10px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+    }
+    .project-card {
+        height: 200px;
+    }
+    .project-info p {
+        font-size: 18px;
+    }
+    .project-card:hover {
+        transform: scale(1.04) translateY(-4px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-section {
+        padding: 20px 5px;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .project-card {
+        height: 180px;
+    }
+    .project-info p {
+        font-size: 16px;
+    }
+    .project-info a {
+        font-size: 12px;
+    }
+    .project-card:hover {
+        transform: scale(1.02) translateY(-3px);
+    }
+}*/
+
+
     </style>
 </head>
 <body>
