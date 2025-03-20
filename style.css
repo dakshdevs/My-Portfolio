@@ -342,6 +342,9 @@ color: #ffffff;
     .typing-heading {
         font-size: 20px;
     }
+    .typing-heading p {
+        font-style: 30px;
+    }
     .typing-cursor {
         font-size: 20px;
     }
@@ -365,7 +368,7 @@ color: #ffffff;
         height: 70vw;
     }
     .sci a i {
-        font-size: 10px;
+        font-size: 15px;
     }
     .typing-container h2 {
         font-size: 16px;
@@ -496,7 +499,7 @@ color: #ffffff;
     transition: 0.3s;
 }
 .icons a:hover {
-    color: #fff;
+    color:  #c47806;
 }
 .buttons {
     margin-top: 20px;
@@ -545,6 +548,10 @@ color: #ffffff;
         flex-direction: column;
         gap: 50px;
     }
+    .navbar a {
+        font-family: 'Great Vibes', sans-serif;
+        font-weight: 1000;
+    }
     .image-container {
         width: 90%;
         height: auto;
@@ -575,6 +582,10 @@ color: #ffffff;
         padding: 10px 20px;
         font-size: 1rem;
     }
+    .navbar a {
+        font-family: 'Great Vibes', sans-serif;
+        font-weight: 1000;
+    }
 }
 
 @media (max-width: 480px) {
@@ -591,6 +602,10 @@ color: #ffffff;
     .buttons button {
         padding: 8px 16px;
         font-size: 0.9rem;
+    }
+    .navbar a {
+        font-family: 'Great Vibes', sans-serif;
+        font-weight: 1000;
     }
 }
 
