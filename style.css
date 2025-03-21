@@ -767,7 +767,7 @@ transform: scale(1.04) translateY(-4px);
 @media screen and (max-width: 480px) {
 .custom-projects-section {
 padding: 20px 5px;
-margin-top: 15%;
+margin-top: 65%;
 }
 .custom-section-title {
 font-size: 1.5rem;
@@ -804,7 +804,7 @@ transform: scale(1.02) translateY(-3px);
     }
 
     .custom-projects-section {
-        margin-top: 80px;
+        margin-top: 70%;
     }
     .custom-project-card {
         width: 90%; /* Chhoti screen pe proper width */
