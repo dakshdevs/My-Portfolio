@@ -734,6 +734,7 @@ transform: scale(1.05) translateY(-5px);
 @media screen and (max-width: 768px) {
 .custom-projects-section {
 padding: 30px 10px;
+margin-top: 70px;
 }
 .custom-section-title {
 font-size: 1.8rem;
@@ -757,6 +758,7 @@ transform: scale(1.04) translateY(-4px);
 @media screen and (max-width: 480px) {
 .custom-projects-section {
 padding: 20px 5px;
+margin-top: 70px;
 }
 .custom-section-title {
 font-size: 1.5rem;
