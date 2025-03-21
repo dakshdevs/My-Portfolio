@@ -535,8 +535,8 @@ color: #ffffff;
 
 @media (max-width: 1024px) {
     .about {
-        
-        margin-top: 40px;
+        padding: 40px 20px;
+        margin-top: 140px;
     }
     .about h2 {
         font-size: 4.5rem;
@@ -611,34 +611,6 @@ color: #ffffff;
 }
 
 
-
-/*.projects-section {
-    padding: 50px 20px;
-    margin-top: 10px;
-}
-.projects-section h2 {
-    margin-bottom: 60px;
-    margin-top: 70px;
-}
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ff9800;
-    margin-top: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-bottom: 40px;
-}
-.section-title span {
-    color: white;
-}
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
-}*/
 .custom-projects-section {
     padding: 50px 20px;
     margin-top: 10px;
