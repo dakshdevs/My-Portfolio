@@ -707,10 +707,11 @@ color: #ffffff;
 @media screen and (max-width: 1024px) {
 .custom-projects-section {
 padding: 40px 15px;
-margin-top: 70px;
+background-color: #c47806;
 }
 .custom-projects-section h2 {
     font-size: 30px;
+    background-color: aquamarine;
 }
 .custom-section-title {
 font-size: 2rem;
@@ -734,7 +735,6 @@ transform: scale(1.05) translateY(-5px);
 @media screen and (max-width: 768px) {
 .custom-projects-section {
 padding: 30px 10px;
-margin-top: 70px;
 }
 .custom-section-title {
 font-size: 1.8rem;
@@ -758,7 +758,6 @@ transform: scale(1.04) translateY(-4px);
 @media screen and (max-width: 480px) {
 .custom-projects-section {
 padding: 20px 5px;
-margin-top: 70px;
 }
 .custom-section-title {
 font-size: 1.5rem;
