@@ -707,11 +707,9 @@ color: #ffffff;
 @media screen and (max-width: 1024px) {
 .custom-projects-section {
 padding: 40px 15px;
-background-color: #c47806;
 }
 .custom-projects-section h2 {
     font-size: 30px;
-    background-color: aquamarine;
 }
 .custom-section-title {
 font-size: 2rem;
