@@ -715,12 +715,14 @@ padding: 40px 15px;
 font-size: 2rem;
 }
 .custom-projects-grid {
-gap: 40px;
+gap: 70px;
+
 }
 .custom-project-card {
 width: 90%;
 height: 220px;
-margin: auto;
+margin-left: auto;
+margin-right: auto;
 }
 .custom-project-info p {
 font-size: 20px;
