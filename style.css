@@ -762,7 +762,7 @@ transform: scale(1.04) translateY(-4px);
 @media screen and (max-width: 480px) {
 .custom-projects-section {
 padding: 20px 5px;
-margin-top: 10%;
+margin-top: 15%;
 }
 .custom-section-title {
 font-size: 1.5rem;
