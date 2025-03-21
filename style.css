@@ -261,6 +261,11 @@ color: #ffffff;
         padding: 20px 5%;
         background-color: #1f242d;
     }
+    .navbar .logo {
+        font-family: 'Great Vibes', sans-serif;
+font-weight: 1000;
+    }
+    
     .home {
         flex-direction: column;
         text-align: center;
@@ -786,3 +791,22 @@ transform: scale(1.02) translateY(-3px);
 }
 }
 
+@media (max-width: 360px) {
+    .custom-projects-grid {
+        display: flex;
+        flex-direction: column; /* Taake ek ke niche ek aaye */
+        align-items: center;
+        gap: 10px; /* Cards ke beech gap ho */
+    }
+
+    .custom-project-card {
+        width: 90%; /* Chhoti screen pe proper width */
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .custom-project-card img {
+        width: 100%;
+        height: auto;
+    }
+}
