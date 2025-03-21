@@ -401,7 +401,7 @@ color: #ffffff;
     animation: slideIn 1.5s ease-in-out;
 }
 @keyframes slideIn {
-    from { opacity: 0; transform: translateY(-30px); }
+    from { opacity: 0; transform: translateY(0); }
     to { opacity: 1; transform: translateY(0); }
 }
 .about h2 {
@@ -611,7 +611,7 @@ color: #ffffff;
 
 
 
-.projects-section {
+/*.projects-section {
     padding: 50px 20px;
     margin-top: 10px;
 }
@@ -637,10 +637,37 @@ color: #ffffff;
     gap: 30px;
     max-width: 1200px;
     margin: auto;
+}*/
+.custom-projects-section {
+    padding: 50px 20px;
+    margin-top: 10px;
 }
-.project-card {
+.custom-projects-section h2 {
+    margin-bottom: 90px;
+    margin-top: 100px;
+}
+.custom-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+}
+.custom-section-title span {
+    color: white;
+}
+.custom-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.custom-project-card {
     background: #1E1E1E;
-    border-radius: 5px; /* Reduced border radius for professional look */
+    border-radius: 5px;
     box-shadow: none;
     overflow: hidden;
     cursor: pointer;
@@ -649,16 +676,16 @@ color: #ffffff;
     height: 250px;
     width: 100%;
 }
-.project-card:hover {
+.custom-project-card:hover {
     transform: scale(1.08) translateY(-10px);
 }
-.project-card img {
-    width: 100%; /* Ensure full width of the card */
-    height: 100%; /* Ensure full height of the card */
-    object-fit: fill; /* Ensures image stretches to fit the card properly */
+.custom-project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
     display: block;
 }
-.project-info {
+.custom-project-info {
     position: absolute;
     top: 0;
     left: 0;
@@ -677,109 +704,104 @@ color: #ffffff;
     font-family:'Raleway', sans-serif;
     transition: opacity 0.8s ease-in-out;
 }
-.project-info i {
+.custom-project-info i {
     color: white;
 }
-.project-card:hover .project-info {
+.custom-project-card:hover .custom-project-info {
     opacity: 1;
 }
-
-.project-info a {
+.custom-project-info a {
     text-decoration: none;
     font-weight: bold;
     display: block;
     text-align: center;
     font-size: 14px;
+    margin-top: 30px;
     align-items: center;
-   
 }
-.project-info p {
-    
+.custom-project-info p {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 23px;
+    margin-top: 50px;
     font-weight: bold;
-
 }
+
+
+
 
 
 @media screen and (max-width: 1024px) {
-.projects-section {
+.custom-projects-section {
 padding: 40px 15px;
 }
-.projects-section h2 {
-    margin-top: 90px;
+.custom-projects-section h2 {
+    margin-top: 40px;
 }
-.section-title {
+.custom-section-title {
 font-size: 2rem;
 }
-.projects-grid {
+.custom-projects-grid {
 gap: 20px;
 }
-.project-card {
+.custom-project-card {
 width: 90%;
 height: 220px;
 margin: auto;
 }
-.project-info p {
+.custom-project-info p {
 font-size: 20px;
 }
-.project-card:hover {
+.custom-project-card:hover {
 transform: scale(1.05) translateY(-5px);
 }
 }
 
 @media screen and (max-width: 768px) {
-.projects-section {
+.custom-projects-section {
 padding: 30px 10px;
 }
-.projects-section h2 {
-    margin-top: 90px;
-}
-.section-title {
+.custom-section-title {
 font-size: 1.8rem;
 }
-.projects-grid {
+.custom-projects-grid {
 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 gap: 15px;
 }
-.project-card {
+.custom-project-card {
 width: 85%;
 height: 200px;
 }
-.project-info p {
+.custom-project-info p {
 font-size: 18px;
 }
-.project-card:hover {
+.custom-project-card:hover {
 transform: scale(1.04) translateY(-4px);
 }
 }
 
 @media screen and (max-width: 480px) {
-.projects-section {
+.custom-projects-section {
 padding: 20px 5px;
 }
-.projects-section h2 {
-    margin-top: 90px;
-}
-.section-title {
+.custom-section-title {
 font-size: 1.5rem;
 }
-.projects-grid {
+.custom-projects-grid {
 grid-template-columns: 1fr;
 gap: 10px;
 }
-.project-card {
+.custom-project-card {
 width: 90%;
 height: 180px;
 }
-.project-info p {
+.custom-project-info p {
 font-size: 16px;
 }
-.project-info a {
+.custom-project-info a {
 font-size: 12px;
 }
-.project-card:hover {
+.custom-project-card:hover {
 transform: scale(1.02) translateY(-3px);
 }
 }

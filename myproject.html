@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>My Unique Projects</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -11,15 +11,16 @@
             margin: 0;
             padding: 0;
             background-color: #1f242d;
+            
         }
-        .projects-section {
+        .custom-projects-section {
             padding: 50px 20px;
             margin-top: 10px;
         }
-        .projects-section h2 {
+        .custom-projects-section h2 {
             margin-bottom: 50px;
         }
-        .section-title {
+        .custom-section-title {
             text-align: center;
             font-size: 2.5rem;
             font-weight: bold;
@@ -28,19 +29,19 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin-bottom: 40px;
         }
-        .section-title span {
+        .custom-section-title span {
             color: white;
         }
-        .projects-grid {
+        .custom-projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             max-width: 1200px;
             margin: auto;
         }
-        .project-card {
+        .custom-project-card {
             background: #1E1E1E;
-            border-radius: 5px; /* Reduced border radius for professional look */
+            border-radius: 5px;
             box-shadow: none;
             overflow: hidden;
             cursor: pointer;
@@ -49,16 +50,16 @@
             height: 250px;
             width: 100%;
         }
-        .project-card:hover {
+        .custom-project-card:hover {
             transform: scale(1.08) translateY(-10px);
         }
-        .project-card img {
-            width: 100%; /* Ensure full width of the card */
-            height: 100%; /* Ensure full height of the card */
-            object-fit: fill; /* Ensures image stretches to fit the card properly */
+        .custom-project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
             display: block;
         }
-        .project-info {
+        .custom-project-info {
             position: absolute;
             top: 0;
             left: 0;
@@ -77,198 +78,129 @@
             font-family:'Raleway', sans-serif;
             transition: opacity 0.8s ease-in-out;
         }
-        .project-info i {
+        .custom-project-info i {
             color: white;
         }
-        .project-card:hover .project-info {
+        .custom-project-card:hover .custom-project-info {
             opacity: 1;
         }
-
-        .project-info a {
+        .custom-project-info a {
             text-decoration: none;
             font-weight: bold;
             display: block;
             text-align: center;
             font-size: 14px;
             align-items: center;
-           
         }
-        .project-info p {
-            
+        .custom-project-info p {
             font-family: 'Raleway', sans-serif;
             text-transform: uppercase;
             font-size: 23px;
             font-weight: bold;
-  
         }
 
+       
 
-        @media screen and (max-width: 1024px) {
-    .projects-section {
+
+
+@media screen and (max-width: 1024px) {
+    .custom-projects-section {
         padding: 40px 15px;
     }
-    .section-title {
+    .custom-section-title {
         font-size: 2rem;
     }
-    .projects-grid {
+    .custom-projects-grid {
         gap: 20px;
     }
-    .project-card {
+    .custom-project-card {
         width: 90%;
         height: 220px;
         margin: auto;
     }
-    .project-info p {
+    .custom-project-info p {
         font-size: 20px;
     }
-    .project-card:hover {
+    .custom-project-card:hover {
         transform: scale(1.05) translateY(-5px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .projects-section {
+    .custom-projects-section {
         padding: 30px 10px;
     }
-    .section-title {
+    .custom-section-title {
         font-size: 1.8rem;
     }
-    .projects-grid {
+    .custom-projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 15px;
     }
-    .project-card {
+    .custom-project-card {
         width: 85%;
         height: 200px;
     }
-    .project-info p {
+    .custom-project-info p {
         font-size: 18px;
     }
-    .project-card:hover {
+    .custom-project-card:hover {
         transform: scale(1.04) translateY(-4px);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .projects-section {
+    .custom-projects-section {
         padding: 20px 5px;
     }
-    .section-title {
+    .custom-section-title {
         font-size: 1.5rem;
     }
-    .projects-grid {
+    .custom-projects-grid {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    .project-card {
+    .custom-project-card {
         width: 90%;
         height: 180px;
     }
-    .project-info p {
+    .custom-project-info p {
         font-size: 16px;
     }
-    .project-info a {
+    .custom-project-info a {
         font-size: 12px;
     }
-    .project-card:hover {
+    .custom-project-card:hover {
         transform: scale(1.02) translateY(-3px);
     }
 }
 
 
-/*@media screen and (max-width: 1024px) {
-    .projects-section {
-        padding: 40px 15px;
-    }
-    .section-title {
-        font-size: 2rem;
-    }
-    .projects-grid {
-        gap: 20px;
-    }
-    .project-card {
-        height: 220px;
-    }
-    .project-info p {
-        font-size: 20px;
-    }
-    .project-card:hover {
-        transform: scale(1.05) translateY(-5px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .projects-section {
-        padding: 30px 10px;
-    }
-    .section-title {
-        font-size: 1.8rem;
-    }
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-    }
-    .project-card {
-        height: 200px;
-    }
-    .project-info p {
-        font-size: 18px;
-    }
-    .project-card:hover {
-        transform: scale(1.04) translateY(-4px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .projects-section {
-        padding: 20px 5px;
-    }
-    .section-title {
-        font-size: 1.5rem;
-    }
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .project-card {
-        height: 180px;
-    }
-    .project-info p {
-        font-size: 16px;
-    }
-    .project-info a {
-        font-size: 12px;
-    }
-    .project-card:hover {
-        transform: scale(1.02) translateY(-3px);
-    }
-}*/
 
 
     </style>
 </head>
 <body>
-    <section class="projects-section">
-        <h2 class="section-title">MY <span>PROJECTS</span></h2>
-        <div class="projects-grid">
-            <div class="project-card">
+    <section class="custom-projects-section">
+        <h2 class="custom-section-title">MY <span>PROJECTS</span></h2>
+        <div class="custom-projects-grid">
+            <div class="custom-project-card">
                 <img src="https://source.unsplash.com/400x250/?technology,website" alt="Project 1">
-                <div class="project-info">
+                <div class="custom-project-info">
                     <p>A responsive fashion e-commerce website for men & women.</p>
                     <a href="#"><i class="fa-solid fa-link"> &nbsp; Visit project</i></a>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="custom-project-card">
                 <img src="https://source.unsplash.com/400x250/?coding,development" alt="Project 2">
-                <div class="project-info">
+                <div class="custom-project-info">
                     <p>A personal portfolio to showcase my frontend development skills.</p>
                     <a href="#"><i class="fa-solid fa-link"> &nbsp; Visit project</i></a>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="custom-project-card">
                 <img src="image/madamboutiqueweb.png" alt="Project 3">
-                <div class="project-info">
-                    
+                <div class="custom-project-info">
                     <p>Madam Boutique.</p>
                     <a href="https://dakshcharyani06.github.io/mboutique/"><i class="fa-solid fa-link"> &nbsp; Visit project</i></a>
                 </div>
