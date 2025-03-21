@@ -799,6 +799,13 @@ transform: scale(1.02) translateY(-3px);
         gap: 10px; /* Cards ke beech gap ho */
     }
 
+    .custom-about-section {
+        padding-bottom: 80px; /* Extra space for small screens */
+    }
+
+    .custom-projects-section {
+        margin-top: 80px;
+    }
     .custom-project-card {
         width: 90%; /* Chhoti screen pe proper width */
         max-width: 320px;
