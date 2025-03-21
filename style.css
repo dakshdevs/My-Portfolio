@@ -709,7 +709,7 @@ font-weight: 1000;
 
 
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
 .custom-projects-section {
 padding: 40px 15px;
 margin-top: 70%;
@@ -794,20 +794,20 @@ transform: scale(1.02) translateY(-3px);
 @media (max-width: 360px) {
     .custom-projects-grid {
         display: flex;
-        flex-direction: column; /* Taake ek ke niche ek aaye */
+        flex-direction: column; 
         align-items: center;
-        gap: 10px; /* Cards ke beech gap ho */
+        gap: 10px; 
     }
 
     .custom-about-section {
-        padding-bottom: 80px; /* Extra space for small screens */
+        padding-bottom: 80px; 
     }
 
     .custom-projects-section {
         margin-top: 70%;
     }
     .custom-project-card {
-        width: 90%; /* Chhoti screen pe proper width */
+        width: 90%; 
         max-width: 320px;
         text-align: center;
     }
@@ -815,5 +815,46 @@ transform: scale(1.02) translateY(-3px);
     .custom-project-card img {
         width: 100%;
         height: auto;
+    }
+}
+*/
+@media screen and (max-width: 768px) {
+    .custom-projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-project-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .custom-project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-project-info {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .custom-project-card {
+        width: 100%;
+    }
+
+    .custom-project-info p {
+        font-size: 14px;
+    }
+
+    .custom-project-info a {
+        font-size: 14px;
     }
 }
