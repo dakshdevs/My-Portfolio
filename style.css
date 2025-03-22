@@ -716,7 +716,6 @@ font-weight: 1000;
  @media screen and (max-width: 1024px) {
 .custom-projects-section {
 padding: 40px 15px;
-margin-top: 70%;
 }
 .custom-projects-section h2 {
     font-size: 36px;
@@ -744,7 +743,7 @@ transform: scale(1.05) translateY(-5px);
 @media screen and (max-width: 768px) {
 .custom-projects-section {
 padding: 30px 10px;
-margin-top: 40%;
+
 }
 .custom-section-title h2 {
     font-size: 17px;
@@ -771,7 +770,7 @@ transform: scale(1.04) translateY(-4px);
 @media screen and (max-width: 480px) {
 .custom-projects-section {
 padding: 20px 5px;
-margin-top: 65%;
+
 }
 .custom-section-title {
 font-size: 1.5rem;
