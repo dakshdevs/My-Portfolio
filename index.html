@@ -17,16 +17,15 @@
         </div>
         <ul>
             <li class="active"><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">education</a></li>
-            <li><a href="#">skills</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#project">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
 
    
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-info">
 
             <h1> Daksh Charyani</h1>
@@ -57,7 +56,7 @@
 
 
 
-    <section class="about">
+    <section class="about" id="about">
         <h2>About <span>Me</span></h2>
         <div class="about-content">
             <div class="image-container">
@@ -65,7 +64,7 @@
                 <img src="image/IMG_3607.jpeg" alt="Your Photo">
             </div>
             <div class="text">
-                <p>I'm Daksh Charyani, <br> a passionate frontend web developer who loves turning creative ideas into clean, responsive designs. Initially, I had no particular interest in web development, but as I explored it, I discovered a genuine passion for coding. Now, I'm fully committed to honing my skills, especially in JavaScript, while also aiming to learn backend development. I approach every task with determination, ensuring it's completed no matter what. With a problem-solving mindset and a drive for continuous growth, I'm excited to build innovative web experiences and expand my expertise.</p>
+                <p>I'm Daksh Charyani, <br> a passionate frontend web developer who loves turning creative ideas into clean, responsive designs. Initially, I had no particular interest in web development, but as I explored it, I discovered a genuine passion for coding. Now, I'm fully committed to honing my skills, especially in JavaScript, while also aiming to learn backend development. I approach every task with determination, ensuring it's completed no matter what. With a problem-solving mindset and a drive for continuous growth, I'm excited to build innovative web experiences and expand my expertise I have successfully completed my 1st-year education with 89% and am currently preparing for my 2nd-year exams.</p>
                 <div class="icons">
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -91,7 +90,7 @@
 
 
 
-    <section class="custom-projects-section">
+    <section class="custom-projects-section" id="project">
         <h2 class="custom-section-title">MY <span>PROJECTS</span></h2>
         <div class="custom-projects-grid">
             <div class="custom-project-card">
@@ -131,7 +130,7 @@
 
 
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <h1><span>My</span> <strong>Skills</strong></h1>
         <p>I specialize in HTML and CSS to create responsive and modern websites. I have a strong grip on Bootstrap for styling and layout, along with a basic understanding of JavaScript to enhance interactivity.</p>
         
@@ -162,6 +161,75 @@
                 <div class="progress" style="width: 70%;"></div>
             </div>
     </section>
+
+
+
+
+
+    <section class="custom-contact-section" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <p>If you need assistance or have any inquiries, feel free to reach out to us through the contact details provided below.</p>
+        
+        <div class="custom-contact-info">
+            <p><i class="fas fa-phone"></i><strong>Call:</strong> <a href="#">0302 9501 614</a></p>
+            <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="#">dakshdevsx@gmailcom</a></p>
+            <p><i class="fas fa-map-marker-alt"></i><strong>City:</strong> <span>Karachi</span></p>
+        </div>
+    </section>
+    
+    <section class="custom-form-container">
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <nav class="footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+</footer>
+
+
+<footer class="cfooter">
+    <p>Copyright &copy; 2025 | Daksh Charyani</p>
+</footer>
+
+
+
+
+
+
 
 
 
