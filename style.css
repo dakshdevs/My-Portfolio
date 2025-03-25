@@ -9,7 +9,7 @@ a{
     text-decoration: none;
 }
 html{
-    background-color: #1f242d;
+    background-color: #000000;
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
@@ -19,7 +19,7 @@ html{
     top: 0;
     width: 100%;
     padding: 25px 9%;
-    background-color: #1f242d;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ font-size: 30px;
 color: #ffffff;
 }
 .navbar .logo span{
-    color: #ff9800;
+    color: #FF7300;
 }
 .navbar ul{
     display: flex;
@@ -68,7 +68,7 @@ color: #ffffff;
 }
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    color: #ff9800;
+    color:  #FF7300;
 }
 .home{
     display: flex;
@@ -110,7 +110,7 @@ color: #ffffff;
 
 .typing-text {
     display: inline-block;
-    color: #ff9800;
+    color:  #FF7300;
     font-weight: bold;
     text-align: left;
     position: relative;
@@ -119,7 +119,7 @@ color: #ffffff;
 
 .typing-cursor {
     display: inline-block;
-    color: #ff9800;
+    color:  #FF7300;
     font-size: 30px;
     font-weight: bold;
     animation: blinkCursor 0.6s infinite;
@@ -147,7 +147,7 @@ color: #ffffff;
     margin: 10px 0 25px;
     font-weight: lighter;
     font-family: 'Nunito', sans-serif;
-    color: rgb(212, 197, 197);
+    color:  #ffffffcc;
 }
 .home-info .btn-sci {
     display: flex;
@@ -156,10 +156,10 @@ color: #ffffff;
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    background: #ff9800;
-    border: 2px solid #ff9800;
+    background:  #FF7300;
+    border: 2px solid  #FF7300;
     border-radius: 40px;
-    box-shadow:0 0 10px #ff9800;
+    box-shadow:0 0 10px  #FF7300;
     font-size: 16px;
     color: rgb(21, 20, 20);
     font-weight: 600;
@@ -167,7 +167,7 @@ color: #ffffff;
 }
 .btn:hover {
     background: transparent;
-    color: #eb9514;
+    color:  #e16703;
     box-shadow: none;
 }
 .home-info .btn-sci .sci {
@@ -176,17 +176,17 @@ color: #ffffff;
 .home-info .btn-sci .sci a {
     display: inline-flex;
     padding: 8px;
-    border: 2px solid #ff9800;
+    border: 2px solid  #FF7300;
     border-radius: 50%;
     font-size: 20px;
-    color: #ff9800;
+    color:  #FF7300;
     margin: 0 8px;
     transition: .5s;
 }
 .home-info .btn-sci .sci a:hover {
-    background: #ff9800;
+    background:  #da6303;
     color: #1f242d;
-    box-shadow: 0 0 10px #ff9800;
+    box-shadow: 0 0 10px  #FF7300;
 }
 .home-img .img-box{
     position: relative;
@@ -205,7 +205,7 @@ color: #ffffff;
     position: absolute;
     width: 500px;
     height: 500px;
-    background: conic-gradient(transparent, transparent, transparent, #ff9800);
+    background: conic-gradient(transparent, transparent, transparent,  #FF7300);
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
 }
@@ -221,10 +221,10 @@ color: #ffffff;
     position: relative;
     width: 100%;
     height: 100%;
-    background: #1f242d;
+    background: #000000;
     border-radius: 50%;
     display: flex;
-    border: .1px solid #1f242d;
+    border: .1px solid #000000;
     z-index: 1;
     justify-content: center;
     overflow: hidden;
@@ -234,7 +234,7 @@ color: #ffffff;
     display: block;
     width: 100%;
     object-fit: cover;
-    mix-blend-mode: lighten;
+   
 }
 
 
@@ -261,7 +261,7 @@ color: #ffffff;
 @media (max-width: 1024px) {
     .navbar {
         padding: 20px 5%;
-        background-color: #1f242d;
+        background-color: #000000;
     }
     .navbar .logo {
         font-family: 'Great Vibes', sans-serif;
@@ -296,7 +296,7 @@ font-weight: 1000;
         top: 60px;
         left: 0;
         width: 100%;
-        background: #1f242d;
+        background: #000000;
         padding: 10px 0;
         
         
@@ -320,7 +320,7 @@ font-weight: 1000;
     .navbar ul.show {
         display: flex;
         width: 100%;
-        background-color: #1f242d;    
+        background-color: #000000;    
     }
     .navbar ul.active {
         display: flex;
@@ -426,7 +426,7 @@ font-weight: 1000;
 }
 
 .about h2 span {
-    color:  #ff9800;
+    color:   #FF7300;
 }
 .about-content {
     display: flex;
@@ -453,7 +453,7 @@ font-weight: 1000;
 .image-container .extra-frame::after {
     content: "";
     position: absolute;
-    background:  #ff9800;
+    background:   #FF7300;
 }
 .image-container::before {
     top: -10px;
@@ -490,7 +490,7 @@ font-weight: 1000;
 .text p {
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: #ffffffcc;
     font-size: 20px;
     gap: 10px;
 }
@@ -499,14 +499,14 @@ font-weight: 1000;
     margin: 25px 0;
 }
 .icons a {
-    color: #ff9800;
+    color:  #FF7300;
     font-size: 1.7rem;
     margin-right: 18px;
     margin-top: 30px;
     transition: 0.3s;
 }
 .icons a:hover {
-    color:  #c47806;
+    color:   #e06805;
 }
 .buttons {
     margin-top: 20px;
@@ -520,22 +520,22 @@ font-weight: 1000;
     transition: 0.3s;
 }
 .btn-primary {
-    background-color: #ff9800;
+    background-color:  #FF7300;
     color: #121212;
     border-radius: 5px;
 }
 .btn-primary:hover {
-    background-color: #e68900;
+    background-color:  #e36803;
 }
 .btn-secondary {
     background-color: transparent;
     color: #000000;
-    background-color: #ff9800;
-    border: 2px solid #ff9800;
+    background-color:  #FF7300;
+    border: 2px solid  #FF7300;
     border-radius: 5px;
 }
 .btn-secondary:hover {
-    background-color: #d18109;
+    background-color:  #e26804;
     color: #121212;
 }
 
@@ -636,7 +636,7 @@ font-weight: 1000;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ff9800;
+    color:  #FF7300;
     margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 40px;
@@ -846,12 +846,12 @@ transform: scale(1.02) translateY(-3px);
     color: #ffffff;
 }
 .skills-section h1 strong {
-    color: #ff9800;
+    color:  #FF7300;
 }
 .skills-section p {
     font-size: 1.1em;
     font-family: 'Poppins', sans-serif;
-    color: #d3d3d3;
+    color: #ffffffcc;
     margin-bottom: 20px;
 }
 .skill {
@@ -874,7 +874,7 @@ transform: scale(1.02) translateY(-3px);
 }
 .progress {
     height: 100%;
-    background: #ff9800;
+    background:  #FF7300;
     width: 0;
     transition: width 1.5s ease-in-out;
 }
@@ -936,7 +936,7 @@ transform: scale(1.02) translateY(-3px);
     text-transform: uppercase;
 }
 .custom-contact-section h2 span {
-    color:  #ff9800;
+    color:  #FF7300;
 }
 .custom-contact-section p {
     font-size: 18px;
@@ -966,7 +966,7 @@ transform: scale(1.02) translateY(-3px);
     min-width: 80px;
 }
 .custom-contact-info a, .custom-contact-info span {
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffffffcc;
     text-decoration: none;
 }
 .custom-contact-info i {
@@ -993,24 +993,26 @@ transform: scale(1.02) translateY(-3px);
     margin-bottom: 10px;
     border: 1px solid #555;
     border-radius: 5px;
-    background-color: #1f242d;
+    background-color: #000000;
     color: white;
     font-size: 18px;
 }
 .custom-form-container button {
-    background-color: #ff9800;
+    background-color:  #ff7300;
     color: white;
     width: 30%;
     padding: 18px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
+    text-transform: uppercase;
     display: block;
     margin: 10px auto;
 }
 .custom-form-container button:hover {
-    background-color: #e08805;
+    background-color:  #d86100;
+    transition: .5s;
 }
 
 /* Responsive Styles */
@@ -1130,7 +1132,7 @@ footer {
     
 }
 .social-icons a :hover {
-    color: #de8909;
+    color: #FF7300;
     transition: .5s;
 }
 .footer {
@@ -1150,7 +1152,7 @@ footer {
 
 .footer :hover {
     transition: .5s;
-    color: #e08805;
+    color:  #FF7300;
 }
 .cfooter {
     color: white;
