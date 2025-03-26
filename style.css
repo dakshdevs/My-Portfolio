@@ -926,6 +926,7 @@ transform: scale(1.02) translateY(-3px);
     padding: 50px;
     display: flex;
     color: white;
+    overflow-x: hidden;
     flex-direction: column;
     align-items: center;
 }
@@ -995,6 +996,7 @@ transform: scale(1.02) translateY(-3px);
     border-radius: 5px;
     background-color: #000000;
     color: white;
+    box-sizing: border-box;
     font-size: 18px;
 }
 .custom-form-container button {
@@ -1079,6 +1081,9 @@ transform: scale(1.02) translateY(-3px);
 @media (max-width: 480px) {
     .custom-contact-section {
         padding: 20px;
+    }
+    .custom-form-container {
+        padding: 10px;
     }
     .custom-contact-section h2 {
         font-size: 28px;
