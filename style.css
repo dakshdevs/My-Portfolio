@@ -1097,7 +1097,7 @@ transform: scale(1.02) translateY(-3px);
     .custom-form-container input,
     .custom-form-container textarea {
         padding: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .custom-form-container button {
