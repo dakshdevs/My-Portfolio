@@ -1197,8 +1197,9 @@ footer {
     }
     
     .footer {
-        flex-direction: column;
-        align-items: center;
+        gap: 19px;
+        display: flex;
+        flex-direction: row;
     }
     
     .footer a {
