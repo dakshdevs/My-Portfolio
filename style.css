@@ -925,6 +925,27 @@ transform: scale(1.02) translateY(-3px);
 
 
 
+/* Autofill hone par background aur text color control karna */
+.custom-form-container input:-webkit-autofill,
+.custom-form-container textarea:-webkit-autofill {
+    background-color: #000000 !important; /* Black background */
+    -webkit-text-fill-color: white !important; /* White text */
+    -webkit-box-shadow: 0 0 0px 1000px #000000 inset !important; /* Force background color */
+    transition: background-color 5000s ease-in-out 0s; /* Background color retain karne ke liye */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .custom-contact-section {
     overflow-x: hidden;
