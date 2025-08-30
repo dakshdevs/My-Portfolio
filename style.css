@@ -384,6 +384,7 @@ font-weight: 1000;
 
 
 
+/* about me section start */
 
 
 
@@ -391,238 +392,310 @@ font-weight: 1000;
 
 
 
-
-
-
-
-
-
-
-
-.about {
-    max-width: 1100px;
-    height: auto;
-    margin: auto;
-    padding: 50px 20px;
-    text-align: left;
-    animation: slideIn 1.5s ease-in-out;
-}
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(0); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.about h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    padding-left: 15px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    position: relative;
-    top: -15px;
-    transition: color 0.3s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.dc-about-section {
+  padding: 50px;
 }
 
-.about h2 span {
-    color:   #FF7300;
-}
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-.image-container {
-    position: relative;
-    width: 420px;
-    height: 530px;
-    
-}
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 8;
-}
-.image-container::before,
-.image-container::after,
-.image-container .extra-frame::before,
-.image-container .extra-frame::after {
-    content: "";
-    position: absolute;
-    background:   #FF7300;
-}
-.image-container::before {
-    top: -10px;
-    left: -7px;
-    width: 80px;
-    height: 4px;
-}
-.image-container::after {
-    top: -10px;
-    left: -10px;
-    width: 4px;
-    height: 80px;
-}
-.info {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    color: #bbb;
-}
-.extra-frame::before {
-    bottom: -10px;
-    right: -10px;
-    width: 80px;
-    height: 4px;
-}
-.extra-frame::after {
-    bottom: -10px;
-    right: -10px;
-    width: 4px;
-    height: 80px;
-}
-.text {
-    max-width: 600px;
-}
-.text p {
-    margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
-    color: #ffffffcc;
-    font-size: 20px;
-    gap: 10px;
+.dc-about-title {
+  font-size: 57px;
+  font-weight: bold;
+  color: white;
 }
 
-.icons {
-    margin: 25px 0;
-}
-.icons a {
-    color:  #FF7300;
-    font-size: 1.7rem;
-    margin-right: 18px;
-    margin-top: 30px;
-    transition: 0.3s;
-}
-.icons a:hover {
-    color:   #e06805;
-}
-.buttons {
-    margin-top: 20px;
-}
-.buttons button {
-    display: inline-block;
-    padding: 12px 24px;
-    border: none;
-    font-size: 1.1rem;
-    margin-right: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 2px solid #ff7300;
-}
-.btn-primary {
-    background-color:  #FF7300;
-    color: #121212;
-    border: 2px solid  #FF7300;
-    border-radius: 5px;
-}
-.btn-primary:hover {
-    background: transparent;
-    color:  #e16703;
-    box-shadow: none;
-    
-}
-.btn-secondary {
-    background-color: transparent;
-    color: #000000;
-    background-color:  #FF7300;
-    border: 2px solid  #FF7300;
-    border-radius: 5px;
-}
-.btn-secondary:hover {
-    background: transparent;
-    color:  #e16703;
-    box-shadow: none;
-    
+.dc-about-title span {
+  color: #FF7300;
 }
 
+.dc-lines {
+  margin-top: 6px;
+}
 
-@media (max-width: 1024px) {
-    .about {
-        padding: 40px 20px;
-        margin-top: 40px;
-    }
-    .about h2 {
-        font-size: 4.5rem;
-        text-align: center;
-        margin-left: 0;
-        margin-top: 40px;
-        padding-left: 0;
-    }
-    .about-content {
-        flex-direction: column;
-        gap: 50px;
-    }
-    .navbar a {
-        font-family: 'Great Vibes', sans-serif;
-        font-weight: 1000;
-    }
-    .image-container {
-        width: 90%;
-        height: auto;
-    }
-    .text p {
-        font-size: 18px;
-        margin-left: 20px;
-    }
-    .icons {
-        margin-left: 20px;
-    }
-    .icons a {
-        font-size: 1.5rem;
-    }
-    .buttons {
-        margin-left: 20px;
-    }
+.dc-line1 {
+  width: 80px;
+  height: 4px; 
+  background-color: #FF7300;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
+
+.dc-line2 {
+  width: 50px;
+  height: 4px; 
+  background-color: #FF7300;
+  border-radius: 2px;
+}
+
+.dc-about-text {
+  margin-top: 60px;
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+}
+
+.dc-about-text span {
+  color: #FF7300;
+  font-weight: 700;
+}
+
+.dc-about-para {
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  width: 100%;
+  color: #cbcaca;
+}
+
+/* Info Section Grid */
+.dc-info-section {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.dc-info-left p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  margin: 30px 0; 
+  font-size: 19px;
+  position: relative;
+}
+
+.dc-info-left span {
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+.dc-info-left .dc-value {
+  color: #ddd;
+  font-weight: 400;
+}
+
+.dc-info-left p::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #535252; 
+  left: 0;
+  right: 40px;
+  bottom: -16px; 
+  display: block;
+}
+
+/* Buttons */
+.dc-buttons {
+  margin-top: 70px;
+  display: flex;
+  margin-left: 34px;
+  gap: 55px; 
+}
+
+.dc-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.dc-btn.dc-download {
+  background-color: #FF7300;
+  box-shadow:0 0 10px #ff7300 ;
+  color: rgb(21, 20, 20);
+  font-weight: bold;
+}
+
+.dc-btn.dc-download:hover {
+  background : transparent;
+  border: 1px solid #FF7300;
+  color: #FF7300;
+  box-shadow: none;
+}
+
+/* Skills Section */
+.dc-skills-section {
+  margin-top: 40px;
+}
+
+.dc-skill {
+  margin-bottom: 45px;
+}
+
+.dc-skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dc-skill-header p {
+  font-size: 16px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.dc-skill-header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.dc-skill-bar {
+  background: #2c2c2c;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 11px;
+  position: relative;
+}
+
+.dc-skill-fill {
+  background: #FF7300;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  width: 0;
+  transition: width 1.8s ease-in-out;
+}
+
+.dc-skill-fill.active {
+  width: var(--skill-width);
+}
+
+/* Education & Experience Section */
+.dc-edu-exp-section {
+  margin-top: 80px;
+  display: grid;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.dc-edu-exp-section h2 {
+  font-size: 26px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dc-edu-box {
+  background: #111;
+  padding: 20px 20px 20px 30px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 115, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.dc-edu-box::before {
+  content: "";
+  position: absolute;
+  left: 15px; 
+  top: 8px; 
+  bottom: 15px; 
+  width: 3px;  
+  background: #FF7300;
+  border-radius: 2px;
+}
+
+.dc-edu-box .dc-year {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #969493;
+  margin-bottom: 38px;
+}
+
+.dc-edu-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.dc-edu-box p {
+  font-size: 14px;
+  color: #c1c0c0;
+  line-height: 1.6;
+}
+
+/* CSS animation */
+@keyframes dc-fadeUp {
+  0% {
+    opacity: 0.1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dc-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.dc-reveal.active {
+  animation: dc-fadeUp 1s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .dc-about-section { padding: 40px; }
+  .dc-about-title { font-size: 36px; }
+  .dc-about-text { font-size: 20px; }
+}
+
+@media (max-width: 992px) {
+  .dc-info-section { grid-template-columns: 1fr 1fr; }
+  .dc-edu-exp-section { grid-template-columns: 1fr; }
+  .dc-buttons { margin-left: 0; gap: 20px; justify-content: center; }
 }
 
 @media (max-width: 768px) {
-    .about h2 {
-        font-size: 2rem;
-    }
-    .text p {
-        font-size: 16px;
-    }
-    .buttons button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-    .navbar a {
-        font-family: 'Great Vibes', sans-serif;
-        font-weight: 1000;
-    }
+  .dc-about-section { padding: 30px 20px; }
+  .dc-about-title { font-size: 2rem; text-align: center; }
+  .dc-lines { justify-content: center; align-items: center; display: flex; flex-direction: column; }
+  .dc-about-text { text-align: center; font-size: 18px; }
+  .dc-about-para { text-align: center; font-size: 15px; line-height: 1.6; max-width: 90%; margin: 0 auto; }
+  .dc-info-section { grid-template-columns: 1fr; text-align: center; }
+  .dc-info-left p { font-size: 15px; word-break: break-word; }
+  .dc-info-left p::after { right: 0; }
+  .dc-buttons { flex-direction: row; justify-content: center; margin: 40px auto 0 auto; gap: 23px; }
 }
 
 @media (max-width: 480px) {
-    .about h2 {
-        font-size: 1.8rem;
-    }
-    .text p {
-        font-size: 14px;
-    }
-    .icons a {
-        font-size: 1.3rem;
-        margin-right: 12px;
-    }
-    .buttons button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-    .navbar a {
-        font-family: 'Great Vibes', sans-serif;
-        font-weight: 1000;
-    }
+  .dc-about-title { font-size: 1.8rem; }
+  .dc-about-text { font-size: 16px; }
+  .dc-about-para { font-size: 14px; max-width: 100%; }
+  .dc-info-left p { font-size: 14px; }
+  .dc-btn { padding: 10px 16px; font-size: 13px; }
+  .dc-buttons{ margin-top: 40px; }
+  .dc-skill-header p { font-size: 13px; }
+  .dc-skill-header span { font-size: 11px; }
 }
+
+
+
+
+
+
+
+/* about me section end */
+
+
+
+
+
+
 
 /* my project section */
 
