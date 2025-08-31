@@ -814,7 +814,7 @@ font-weight: 1000;
 
     .proj-content {
       text-align: left;
-      margin-top: 0px;
+      margin-top: 6px;
     }
 
     .proj-content h3 {
@@ -871,6 +871,7 @@ font-weight: 1000;
   }
 .proj-content{
     margin-top: 0px;
+    padding: 0;
 }
   .proj-card {
     margin-bottom: 30px; /* Reduce space between cards */
@@ -878,12 +879,13 @@ font-weight: 1000;
   }
 
   .proj-image {
-    margin-bottom: 4px; /* Reduce space between image and content */
+    margin-bottom: 8px; /* Reduce space between image and content */
   }
 
   .proj-image img {
     height: 280px; /* Slightly smaller on mobile */
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
     width: 100%;
   }
 
