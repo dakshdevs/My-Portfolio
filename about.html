@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-  <style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
 
 *{
     margin: 0%;
@@ -19,301 +13,250 @@
     box-sizing: border-box;
 }
 
-
 html{
     background-color: #000000;
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 
-
-
-
-
-
-.about {
-    max-width: 1100px;
-    height: auto;
-    margin: auto;
+.custom-projects-section {
     padding: 50px 20px;
-    text-align: left;
-    animation: slideIn 1.5s ease-in-out;
+    margin-top: 30px;
 }
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(0); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.about h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    padding-left: 15px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    position: relative;
-    top: -15px;
-    transition: color 0.3s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.about h2 span {
-    color:   #FF7300;
-}
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-.image-container {
-    position: relative;
-    width: 420px;
-    height: 530px;
+.custom-projects-section h2 {
+    margin-bottom: 90px;
+    font-size: 50px;
+    font-weight: 1000;
     
 }
-.image-container img {
+.custom-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  #FF7300;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+}
+.custom-section-title span {
+    color: white;
+}
+.custom-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.custom-project-card {
+    background: #1E1E1E;
+    border-radius: 5px;
+    box-shadow: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s ease, translate 0.5s ease;
+    height: 250px;
+    width: 100%;
+}
+.custom-project-card:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+.custom-project-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 8;
+    object-fit: fill;
+    display: block;
 }
-.image-container::before,
-.image-container::after,
-.image-container .extra-frame::before,
-.image-container .extra-frame::after {
-    content: "";
+.custom-project-info {
     position: absolute;
-    background:   #FF7300;
-}
-.image-container::before {
-    top: -10px;
-    left: -7px;
-    width: 80px;
-    height: 4px;
-}
-.image-container::after {
-    top: -10px;
-    left: -10px;
-    width: 4px;
-    height: 80px;
-}
-.info {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    color: #bbb;
-}
-.extra-frame::before {
-    bottom: -10px;
-    right: -10px;
-    width: 80px;
-    height: 4px;
-}
-.extra-frame::after {
-    bottom: -10px;
-    right: -10px;
-    width: 4px;
-    height: 80px;
-}
-.text {
-    max-width: 600px;
-}
-.text p {
-    margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
-    color: #ffffffcc;
-    font-size: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(18, 18, 18, 0.98), rgba(18, 18, 18, 0.4));
+    color: #ffffff;
+    padding: 0 15px;
+    display: flex;
     gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    font-family:'Raleway', sans-serif;
+    transition: opacity 0.8s ease-in-out;
 }
-
-.icons {
-    margin: 25px 0;
+.custom-project-info i {
+    color: white;
 }
-.icons a {
-    color:  #FF7300;
-    font-size: 1.7rem;
-    margin-right: 18px;
+.custom-project-card:hover .custom-project-info {
+    opacity: 1;
+}
+.custom-project-info a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 14px;
     margin-top: 30px;
-    transition: 0.3s;
+    align-items: center;
 }
-.icons a:hover {
-    color:   #e06805;
-}
-.buttons {
-    margin-top: 20px;
-}
-.buttons button {
-    display: inline-block;
-    padding: 12px 24px;
-    border: none;
-    font-size: 1.1rem;
-    margin-right: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 2px solid #ff7300;
-}
-.btn-primary {
-    background-color:  #FF7300;
-    color: #121212;
-    border: 2px solid  #FF7300;
-    border-radius: 5px;
-}
-.btn-primary:hover {
-    background: transparent;
-    color:  #e16703;
-    box-shadow: none;
-    
-}
-.btn-secondary {
-    background-color: transparent;
-    color: #000000;
-    background-color:  #FF7300;
-    border: 2px solid  #FF7300;
-    border-radius: 5px;
-}
-.btn-secondary:hover {
-    background: transparent;
-    color:  #e16703;
-    box-shadow: none;
-    
+.custom-project-info p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-top: 50px;
+    font-weight: bold;
 }
 
 
-@media (max-width: 1024px) {
-    .about {
-        padding: 40px 20px;
-        margin-top: 40px;
+
+
+
+ @media screen and (max-width: 1024px) {
+.custom-projects-section {
+padding: 40px 15px;
+}
+.custom-projects-section h2 {
+    font-size: 36px;
+}
+.custom-section-title {
+font-size: 2rem;
+}
+.custom-projects-grid {
+gap: 30px;
+}
+.custom-project-card {
+width: 90%;
+height: 220px;
+margin-left: auto;
+margin-right: auto;
+}
+.custom-project-info p {
+font-size: 20px;
+}
+.custom-project-card:hover {
+transform: scale(1.05) translateY(-5px);
+}
+}
+
+@media screen and (max-width: 768px) {
+.custom-projects-section {
+padding: 30px 10px;
+
+}
+.custom-section-title h2 {
+    font-size: 17px;
+}
+.custom-section-title {
+font-size: 1.8rem;
+}
+.custom-projects-grid {
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 25px;
+}
+.custom-project-card {
+width: 85%;
+height: 200px;
+}
+.custom-project-info p {
+font-size: 18px;
+}
+.custom-project-card:hover {
+transform: scale(1.04) translateY(-4px);
+}
+}
+
+@media screen and (max-width: 480px) {
+.custom-projects-section {
+padding: 20px 5px;
+
+}
+.custom-section-title {
+font-size: 1.5rem;
+}
+.custom-projects-grid {
+grid-template-columns: 1fr;
+gap: 19px;
+}
+.custom-project-card {
+width: 90%;
+height: 180px;
+}
+.custom-project-info p {
+font-size: 16px;
+}
+.custom-project-info a {
+font-size: 12px;
+}
+.custom-project-card:hover {
+transform: scale(1.02) translateY(-3px);
+}
+}
+
+@media (max-width: 360px) {
+    .custom-projects-grid {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
     }
-    .about h2 {
-        font-size: 4.5rem;
+
+    .custom-about-section {
+        padding-bottom: 80px; 
+    }
+
+    
+    .custom-project-card {
+        width: 90%; 
+        max-width: 320px;
         text-align: center;
-        margin-left: 0;
-        margin-top: 40px;
-        padding-left: 0;
     }
-    .about-content {
-        flex-direction: column;
-        gap: 50px;
-    }
-    .navbar a {
-        font-family: 'Great Vibes', sans-serif;
-        font-weight: 1000;
-    }
-    .image-container {
-        width: 90%;
+
+    .custom-project-card img {
+        width: 100%;
         height: auto;
     }
-    .text p {
-        font-size: 18px;
-        margin-left: 20px;
-    }
-    .icons {
-        margin-left: 20px;
-    }
-    .icons a {
-        font-size: 1.5rem;
-    }
-    .buttons {
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .about h2 {
-        font-size: 2rem;
-    }
-    .text p {
-        font-size: 16px;
-    }
-    .buttons button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-    .navbar a {
-        font-family: 'Great Vibes', sans-serif;
-        font-weight: 1000;
-    }
-}
-
-@media (max-width: 480px) {
-    .about h2 {
-        font-size: 1.8rem;
-    }
-    .text p {
-        font-size: 14px;
-    }
-    .icons a {
-        font-size: 1.3rem;
-        margin-right: 12px;
-    }
-    .buttons button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-    .navbar a {
-        font-family: 'Great Vibes', sans-serif;
-        font-weight: 1000;
-    }
-}
+}  
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  </style>
-</head>
+</style>
 <body>
-  
+    
 
-
-    <section class="about" id="about">
-        <h2>About <span>Me</span></h2>
-        <div class="about-content">
-            <div class="image-container">
-                <div class="extra-frame"></div>
-                <img src="image/animeimageaboutmesection.jpg" alt="Your Photo">
+    <section class="custom-projects-section" id="project">
+        <h2 class="custom-section-title">MY <span>PROJECTS</span></h2>
+        <div class="custom-projects-grid">
+            <div class="custom-project-card">
+                <img src="image/desimurgaweb.png" alt="Project 1">
+                <div class="custom-project-info">
+                    <p>Desi Murga</p>
+                    <a href="https://dakshdevs.github.io/desimurga/"><i class="fa-solid fa-link"> &nbsp; Visit project</i></a>
+                </div>
             </div>
-            <div class="text">
-                <p>I'm Daksh Charyani, <br>a passionate frontend web developer who enjoys transforming creative ideas into clean, responsive, and user-friendly designs. Over time, I have built a strong foundation in frontend technologies and advanced JavaScript, and I am also expanding my skills in backend development. I take pride in creating interfaces that are visually appealing and deliver smooth user experiences across all devices.
-
-I have successfully completed my 2nd-year education with 89% and continue to focus on both academic and technical growth. With determination, a problem-solving mindset, and a drive for continuous learning, I’m committed to building innovative web solutions and growing as a full-stack developer.</p>
-                <div class="icons">
-                    <a href="https://wa.me/923029501614"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/daksh-charyani-329209348/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/daksh_charyani06/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/dakshdevs"><i class="fab fa-github"></i></a>
+            <div class="custom-project-card">
+                <img src="image/starbucksclone.png" alt="Project 2">
+                <div class="custom-project-info">
+                    <p>Star Bucks Clone</p>
+                    <a href="https://dakshdevs.github.io/starbucksclone/"><i class="fa-solid fa-link"> &nbsp; Visit project</i></a>
                 </div>
-                <div class="info">
-                    <p><strong style="color: white;">Age:</strong> 17</p>
-                    <p><strong style="color: white;" >Birth date:</strong> 6 Feb 2008</p>
-                    <p><strong style="color: white;" >City:</strong> Karachi</p>
-                </div>
-                <div class="buttons">
-                     <a href="https://wa.me/923029501614"><button class="btn-primary">Hire Me</button></a>
-                     <a href="Daksh cv.pdf" download="my cv.pdf"><button class="btn-secondary">Download CV</button></a>
+            </div>
+            <div class="custom-project-card">
+                <img src="image/madamboutiqueweb.png" alt="Project 3">
+                <div class="custom-project-info">
+                    <p>Madam Boutique.</p>
+                    <a href="https://dakshdevs.github.io/mboutique/"><i class="fa-solid fa-link"> &nbsp; Visit project</i></a>
                 </div>
             </div>
         </div>
     </section>
-    
-   
+
+
 
 </body>
 </html>
-
-
-
-
-
