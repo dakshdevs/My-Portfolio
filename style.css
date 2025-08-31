@@ -816,6 +816,7 @@ font-weight: 1000;
 
     .proj-content {
       text-align: left;
+      margin-top: 0px;
     }
 
     .proj-content h3 {
@@ -870,7 +871,9 @@ font-weight: 1000;
     font-size: 1.8rem;
     margin-bottom: 15px; /* Adjust this if title is too far from the cards */
   }
-
+.proj-content{
+    margin-top: 0px;
+}
   .proj-card {
     margin-bottom: 30px; /* Reduce space between cards */
     padding: 10px;
