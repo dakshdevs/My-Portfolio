@@ -878,7 +878,7 @@ font-weight: 1000;
   }
 
   .proj-image {
-    margin-bottom: 10px; /* Reduce space between image and content */
+    margin-bottom: 4px; /* Reduce space between image and content */
   }
 
   .proj-image img {
