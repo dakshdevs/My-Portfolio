@@ -718,6 +718,30 @@ font-weight: 1000;
       color: #ff8800;
     }
 
+    /* Initial hidden state */
+.proj-title {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-play-state: paused; /* animation rukee rahegi jab tak trigger na ho */
+}
+
+/* Define keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active class to trigger animation */
+.proj-title.animate {
+  animation-play-state: running;
+}
+
     .proj-title span {
       color: white;
     }
@@ -753,7 +777,7 @@ font-weight: 1000;
       align-items: center;
       overflow: hidden;
       border-radius: 12px;
-      margin: 15px 0;
+      margin: 10px 0;
     }
 
     .proj-image img {
@@ -832,32 +856,7 @@ font-weight: 1000;
       }
     }
 
-    /* ✅ Responsive for small screens */
-    /* @media (max-width: 600px) {
-      .proj-section {
-        padding: 40px 15px;
-      }
-
-      .proj-title {
-        font-size: 1.8rem;
-      }
-
-      
-      .proj-content h3 {
-        font-size: 1.1rem;
-      }
-
-      .proj-content p,
-      .proj-content a {
-        font-size: 0.9rem;
-      }
-
-      .proj-image img {
-        height: 380px;
-        object-fit: contain;
-      }
-      
-    } */
+  
 
 
 
