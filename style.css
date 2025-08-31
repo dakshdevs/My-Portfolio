@@ -864,12 +864,12 @@ font-weight: 1000;
 
     @media (max-width: 600px) {
   .proj-section {
-    padding: 40px 15px;
+    padding: 30px 15px;
   }
 
   .proj-title {
     font-size: 1.8rem;
-    margin-bottom: 20px; /* Adjust this if title is too far from the cards */
+    margin-bottom: 15px; /* Adjust this if title is too far from the cards */
   }
 
   .proj-card {
@@ -894,6 +894,7 @@ font-weight: 1000;
 
   .proj-content h3 {
     font-size: 1.1rem;
+    margin-top: 0px;
     margin-bottom: 8px;
   }
 
