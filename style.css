@@ -798,15 +798,15 @@ font-weight: 1000;
       font-size: 1.3rem;
       font-family: 'Poppins', sans-serif;
       color: #fff;
-      margin-top: 20px;
-      margin-bottom: 12px;
+      margin-top: 4px;
+      margin-bottom: 2px;
     }
 
     .proj-content p {
       font-size: 0.95rem;
       font-family: 'Poppins', sans-serif;
       color: #bcbaba;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     .proj-content a {
@@ -833,7 +833,7 @@ font-weight: 1000;
     }
 
     /* ✅ Responsive for small screens */
-    @media (max-width: 600px) {
+    /* @media (max-width: 600px) {
       .proj-section {
         padding: 40px 15px;
       }
@@ -842,9 +842,7 @@ font-weight: 1000;
         font-size: 1.8rem;
       }
 
-      .proj-content{
-        margin-top: 4px;
-      }
+      
       .proj-content h3 {
         font-size: 1.1rem;
       }
@@ -858,11 +856,60 @@ font-weight: 1000;
         height: 380px;
         object-fit: contain;
       }
-      .proj-card{
-        margin-top: 10px;
+      
+    } */
 
-      }
-    }
+
+
+
+    @media (max-width: 600px) {
+  .proj-section {
+    padding: 40px 15px;
+  }
+
+  .proj-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px; /* Adjust this if title is too far from the cards */
+  }
+
+  .proj-card {
+    margin-bottom: 30px; /* Reduce space between cards */
+    padding: 10px;
+  }
+
+  .proj-image {
+    margin-bottom: 10px; /* Reduce space between image and content */
+  }
+
+  .proj-image img {
+    height: 280px; /* Slightly smaller on mobile */
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .proj-content {
+    padding: 0;
+    margin-top: 0; /* Remove unnecessary gap above text */
+  }
+
+  .proj-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .proj-content p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .proj-content a {
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 4px;
+  }
+}
+
+
 
 
 
