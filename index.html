@@ -18,7 +18,7 @@
         <ul>
             <li class="active"><a href="#">home</a></li>
             <li><a href="#about">about</a></li>
-            <li><a href="#project">projects</a></li>
+            <li><a href="#projects">projects</a></li>
             <li><a href="#skills">skills</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
@@ -214,39 +214,68 @@
 
 
 
+<!-- my services start  -->
 
-    <section class="skills-section" id="skills">
-        <h1><span>My</span> <strong>Skills</strong></h1>
-        <p>I specialize in HTML and CSS to create responsive and modern websites. I have a strong grip on Bootstrap for styling and layout, along with a basic understanding of JavaScript to enhance interactivity.</p>
-        
-        <div class="skill">
-            <div class="skill-name">HTML - 80%</div>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
-            </div>
-        </div>
-        
-        <div class="skill">
-            <div class="skill-name">CSS - 70%</div>
-            <div class="progress-bar">
-                <div class="progress" style="width: 70%;"></div>
-            </div>
-        </div>
-        
-        <div class="skill">
-            <div class="skill-name">JavaScript - 50%</div>
-            <div class="progress-bar">
-                <div class="progress" style="width: 50%;"></div>
-            </div>
-        </div>
 
-        <div class="skill">
-            <div class="skill-name">Bootstrap - 70%</div>
-            <div class="progress-bar">
-                <div class="progress" style="width: 70%;"></div>
-            </div>
-    </section>
 
+ <section class="services-section-unique">
+    <h2 class="services-heading-unique">
+      <span style="color:#ff7300;">My</span> <span>Services</span>
+    </h2>
+    
+    <div class="services-container-unique">
+      <!-- Card 1 -->
+      <div class="service-card-unique">
+        <div class="service-icon-unique">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3 class="service-title-unique">Web Development</h3>
+        <p class="service-desc-unique">
+          Custom websites with modern technologies.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card-unique">
+        <div class="service-icon-unique">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3 class="service-title-unique">Web Design</h3>
+        <p class="service-desc-unique">
+          Creative and user-friendly designs.
+        </p>
+      </div>
+
+      
+
+      <!-- Card 3 -->
+      <div class="service-card-unique">
+        <div class="service-icon-unique">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="service-title-unique">Responsive Design</h3>
+        <p class="service-desc-unique">
+          Mobile-friendly websites that adapt to all screens.
+        </p>
+      </div>
+
+     
+
+    
+
+    
+
+     
+
+     
+  </section>
+
+
+
+
+<!-- my services end -->
+
+    
 
 
     <section class="custom-contact-section" id="contact">
@@ -509,6 +538,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   
+  // my services section
+
+
+const section = document.querySelector('.services-section-unique');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    observer.observe(section);
 
 
 

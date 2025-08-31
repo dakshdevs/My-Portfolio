@@ -788,9 +788,7 @@ font-weight: 1000;
       transition: transform 0.4s ease;
     }
 
-    /* .proj-image img:hover {
-      transform: scale(1.05);
-    } */
+   
 
     .arrow {
       position: absolute;
@@ -920,90 +918,98 @@ font-weight: 1000;
 /* my project section end  */
 
 
-/* skills section */
+/* services section start*/
 
 
-.skills-section {
-    max-width: 800px;
-    text-align: center;
-    margin: 50px auto;
-    padding: 20px;
-}
-.skills-section h1 {
-    font-size: 56px;
-    font-weight: 1000;
-    margin-bottom: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-}
-.skills-section h1 span {
-    color: #ffffff;
-}
-.skills-section h1 strong {
-    color:  #FF7300;
-}
-.skills-section p {
-    font-size: 1.1em;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffffcc;
-    margin-bottom: 20px;
-}
-.skill {
-    margin: 30px 0;
-    text-align: left;
-}
-.skill-name {
-    font-size: 1.2em;
-    color: #ffffff;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-.progress-bar {
-    width: 100%;
-    background: #1e1e1e;
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.progress {
-    height: 100%;
-    background:  #FF7300;
-    width: 0;
-    transition: width 1.5s ease-in-out;
-}
-@media (max-width: 768px) {
-    .skills-section {
-        width: 90%;
-        padding: 15px;
+ /* Section Styling */
+    .services-section-unique {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+      margin-bottom: 80px;
     }
-    .skills-section h1 {
-        font-size: 36px;
-        margin-bottom: 29px;
+
+    .services-section-unique.animate-visible {
+      opacity: 1;
+      transform: translateY(0);
     }
-    .skill-name {
-        font-size: 1em;
+
+    .services-heading-unique {
+      font-size: 2.5rem;
+      margin-bottom: 80px;
+      font-family: Arial, sans-serif;
+      line-height: 1.2;
     }
-}
-@media (max-width: 480px) {
-    .skills-section {
-        width: 95%;
-        padding: 10px;
+    .services-heading-unique span {
+      color: #ffffff; /* Accent for "Services" */
     }
-    .skills-section h1 {
-        font-size: 27px;
-        margin-bottom: 19px;
+
+    /* Cards Container - FLEXBOX */
+    .services-container-unique {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* center align cards */
+      gap: 30px;
     }
-    .skill-name {
-        font-size: 0.9em;
+
+    /* Service Card */
+    .service-card-unique {
+      background-color: #111;
+      border: 1px solid #222;
+      padding: 30px 20px;
+      width: 300px; /* fixed width */
+      min-height: 260px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
     }
-}
 
+    .service-card-unique:hover {
+      transform: translateY(-10px);
+      border-color: #ff7300;
+    }
 
+    .service-icon-unique {
+      font-size: 3rem;
+      color: #ff7300;
+      margin-bottom: 20px;
+    }
 
+    .service-title-unique {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #fff; 
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
 
+    .service-desc-unique {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #ddd;
+    }
 
+    /* ---------------- Responsive ---------------- */
+    @media (max-width: 1024px) {
+      .service-card-unique {
+        width: 45%; /* 2 cards per line */
+      }
+    }
 
+    @media (max-width: 768px) {
+      .services-heading-unique {
+        font-size: 2rem;
+        margin-bottom: 40px;
+      }
+      .service-card-unique {
+        width: 100%; /* 1 card per line */
+        max-width: 350px;
+      }
+    }
 
+/* services section end*/
 
 
 
