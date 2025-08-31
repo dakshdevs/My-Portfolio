@@ -867,7 +867,7 @@ font-weight: 1000;
 
   .proj-title {
     font-size: 1.8rem;
-    margin-bottom: 15px; /* Adjust this if title is too far from the cards */
+    margin-bottom: 25px; /* Adjust this if title is too far from the cards */
   }
 .proj-content{
     margin-top: 0px;
@@ -891,7 +891,7 @@ font-weight: 1000;
 
   .proj-content {
     padding: 0;
-    margin-top: 0; /* Remove unnecessary gap above text */
+    margin-top: 8px; /* Remove unnecessary gap above text */
   }
 
   .proj-content h3 {
