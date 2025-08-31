@@ -851,7 +851,7 @@ font-weight: 1000;
       }
 
       .proj-image img {
-        height: auto;
+        height: 250px;
         object-fit: contain;
       }
     }
