@@ -1286,6 +1286,12 @@ font-weight: 1000;
         padding: 15px;
     }
 }
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column; /* side by side ki jagah neeche neeche */
+    gap: 0;
+  }
+}
 
 @media (max-width: 480px) {
     .custom-contact-section {
